@@ -3,8 +3,8 @@
 ## Compile
 
 ```
-g++ -O2 -std=c++11 -fopenmp benchmark.cpp -o benchmark
-./benchmark
+g++ -O2 -std=c++11 -fopenmp puzz_api.cpp -o puzz_api
+./puzz_api
 ```
 
 ## License

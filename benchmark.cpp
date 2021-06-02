@@ -504,7 +504,7 @@ ll xor128() {//xorshift整数乱数
 	rx = ry; ry = rz; rz = rw;
 	return (rw = (rw ^ (rw >> 19)) ^ (rt ^ (rt >> 8)));
 }
-int main() {
+int bench_main() {
 
 	int i, j, k;
 	
