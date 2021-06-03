@@ -6,6 +6,8 @@
             "label": "C/C++: cpp アクティブなファイルのビルド",
             "command": "/usr/bin/cpp",
             "args": [
+                "-I/usr/include/python3.6m",
+                "-Iextern/pybind11/include",
                 "-std=c++11",
                 "-fopenmp",
                 "-g",
@@ -27,6 +29,8 @@
             "label": "C/C++: g++ アクティブなファイルのビルド",
             "command": "/usr/bin/g++",
             "args": [
+                "-I/usr/include/python3.6m",
+                "-Iextern/pybind11/include",
 				"-std=c++11",
                 "-fopenmp",
                 "-g",

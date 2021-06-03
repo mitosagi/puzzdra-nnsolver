@@ -1,4 +1,5 @@
 #include "benchmark.cpp"
+#include <pybind11/pybind11.h>
 #define ERR_DROP 127
 
 struct PuzzTable
