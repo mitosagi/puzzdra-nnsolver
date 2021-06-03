@@ -134,7 +134,7 @@ int main()
     for (auto &record : test.next_tables())
     {
         record.show_table();
-        cout << record.x << record.y << '\n';
+        cout << record.x << record.y << record.eval_otoshi() << '\n';
     }
 
     return 0;
