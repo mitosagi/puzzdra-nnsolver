@@ -2,6 +2,8 @@
 #include <pybind11/pybind11.h>
 #define ERR_DROP 127
 
+namespace py = pybind11;
+
 struct PuzzTable
 {
     F_T table[ROW][COL]; // 盤面
@@ -139,4 +141,15 @@ int main()
     }
 
     return 0;
+}
+
+int add(int i,int j){
+  return i+j;
+}
+
+PYBIND11_MODULE(puzzpy, m)
+{
+    m.doc() = "pybind11 example plugin"; // optional module docstring
+
+    m.def("add", &add, "A function which adds two numbers");
 }
