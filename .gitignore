@@ -1,3 +1,5 @@
 /benchmark
 /puzz_api
-/puzzpy.*.so
+/build
+/*.egg-info
+/*.so

@@ -3,33 +3,9 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: cpp アクティブなファイルのビルド",
-            "command": "/usr/bin/cpp",
-            "args": [
-                "-I/usr/include/python3.6m",
-                "-Iextern/pybind11/include",
-                "-std=c++11",
-                "-fopenmp",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
-            ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "コンパイラ: /usr/bin/cpp"
-        },
-        {
-            "type": "cppbuild",
             "label": "C/C++: g++ アクティブなファイルのビルド",
             "command": "/usr/bin/g++",
             "args": [
-                "-I/usr/include/python3.6m",
                 "-Iextern/pybind11/include",
 				"-std=c++11",
                 "-fopenmp",
