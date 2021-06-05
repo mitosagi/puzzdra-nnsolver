@@ -6,7 +6,9 @@
 g++ -O2 -std=c++11 -fopenmp puzz_api.cpp -o puzz_api
 ./puzz_api
 
-c++ -O3 -Wall -shared -std=c++11 -I/usr/include/python3.6m -Iextern/pybind11/include -fopenmp -fPIC $(python3 -m pybind11 --includes) puzz_api.cpp -o puzzpy$(python3-config --extension-suffix)
+c++ -O3 -Wall -shared -std=c++11 -I/usr/include/python3.6m -Iextern/pybind11/include -fopenmp -fPIC $(python3 -m pybind11 --includes) puzzpy.cpp -o puzzpy$(python3-config --extension-suffix)
+
+pip3 install -e .
 ```
 
 ## License
