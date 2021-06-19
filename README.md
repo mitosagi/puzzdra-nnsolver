@@ -3,10 +3,14 @@
 ## Compile
 
 ```
+git clone --recursive # recursive
+
+
 g++ -O2 -std=c++11 -fopenmp puzz_api.cpp -o puzz_api
 ./puzz_api
 
 pip3 install -e .
+pip3 uninstall puzzpy
 ```
 
 ## License
