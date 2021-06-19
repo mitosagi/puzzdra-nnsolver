@@ -89,9 +89,9 @@ struct PuzzTable
         return sum_evaluate(field);
     }
 
-    std::array<std::array<F_T, COL>, ROW> get_table()
+    std::array<std::array<int8_t, COL>, ROW> get_table()
     {
-        auto field = std::array<std::array<F_T, COL>, ROW>();
+        auto field = std::array<std::array<int8_t, COL>, ROW>();
         int j, k;
         for (j = 0; j < ROW; j++)
         {
@@ -103,9 +103,9 @@ struct PuzzTable
         return field;
     }
 
-    std::array<std::array<F_T, COL>, ROW> get_XY_as_table()
+    std::array<std::array<int8_t, COL>, ROW> get_XY_as_table()
     {
-        auto field = std::array<std::array<F_T, COL>, ROW>();
+        auto field = std::array<std::array<int8_t, COL>, ROW>();
         field[y][x] = 1;
         return field;
     }
