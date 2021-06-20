@@ -37,6 +37,11 @@ struct PuzzTable
         return turn;
     }
 
+    int set_turn(int new_turn)
+    {
+        turn = new_turn;
+    }
+
     std::array<PuzzTable, DIR> next_tables()
     {
         auto tables = std::array<PuzzTable, DIR>();
