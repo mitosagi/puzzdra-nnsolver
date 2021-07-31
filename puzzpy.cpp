@@ -14,9 +14,11 @@ PYBIND11_MODULE(puzzpy, m)
         .def("set_turn", &PuzzTable::set_turn)
         .def("next_tables", &PuzzTable::next_tables)
         .def("eval_otoshi", &PuzzTable::eval_otoshi)
+        .def("eval_zenkeshi", &PuzzTable::eval_zenkeshi)
         .def("eval_ochi", &PuzzTable::eval_ochi)
         .def("get_table", &PuzzTable::get_table)
         .def("get_XY_as_table", &PuzzTable::get_XY_as_table)
         .def("show_table", &PuzzTable::show_table);
     m.doc() = "pybind11 example plugin"; // optional module docstring
+    
 }
