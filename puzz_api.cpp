@@ -110,7 +110,7 @@ struct PuzzTable
         return turn;
     }
 
-    int set_turn(int new_turn)
+    void set_turn(int new_turn)
     {
         turn = new_turn;
     }
