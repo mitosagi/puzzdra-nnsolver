@@ -119,8 +119,8 @@ struct PuzzTable
     {
         auto tables = std::array<PuzzTable, DIR>();
         int i;
-        int dx[DIR] = {-1, 0, 0, 1};
-        int dy[DIR] = {0, -1, 1, 0};
+        int dx[DIR] = {1, 0, -1, 0};
+        int dy[DIR] = {0, 1, 0, -1};
 
         for (i = 0; i < DIR; i++)
         {
